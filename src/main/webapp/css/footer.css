@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+        .footer a:hover {
+        text-decoration: underline;
+        color: #d4f4dd;
+        }
+
+        .social-icons a:hover {
+        color: #000;
+        }

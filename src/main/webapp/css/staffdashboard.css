@@ -1,0 +1,32 @@
+@charset "UTF-8";
+body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+	.main-content {
+      margin-left: 250px;
+      padding: 30px;
+      margin-top: 56px;
+      background-color: #f1f5f9 !important;
+      flex-grow: 1;
+    }
+
+    .dashboard-cards .card {
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      transition: 0.3s;
+    }
+
+    .dashboard-cards .card:hover {
+      transform: translateY(-5px);
+    }
+
+    @media (max-width: 768px) {
+
+      .main-content {
+        margin-left: 0;
+        margin-top: 0;
+      }
+    }

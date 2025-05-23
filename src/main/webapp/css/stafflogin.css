@@ -1,0 +1,21 @@
+@charset "UTF-8";
+ body {
+      background: #f2fcf3 !important;
+    }
+    .login-card {
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+    .login-title {
+      color: #28a745;
+      font-weight: bold;
+    }
+    .btn-success {
+      background-color: #28a745;
+      border: none;
+    }
+    .btn-success:hover {
+      background-color: #218838;
+    }

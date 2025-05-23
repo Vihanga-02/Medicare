@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+	
+	<!-- Product CRUD -->
+     <servlet>
+     	<servlet-name>ProductInsert</servlet-name>
+     	<servlet-class>servlet.ProductInsert</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>ProductInsert</servlet-name>
+     	<url-pattern>/ProductInsert</url-pattern>
+     </servlet-mapping>
+     
+      <servlet>
+     	<servlet-name>ProductDisplay</servlet-name>
+     	<servlet-class>servlet.ProductDisplay</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>ProductDisplay</servlet-name>
+     	<url-pattern>/ProductDisplay</url-pattern>
+     </servlet-mapping>
+     
+     <servlet>
+     	<servlet-name>ProductImageDisplay</servlet-name>
+     	<servlet-class>servlet.ProductImageDisplay</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>ProductImageDisplay</servlet-name>
+     	<url-pattern>/ProductImageDisplay</url-pattern>
+     </servlet-mapping>
+     
+     <servlet>
+     	<servlet-name>CustomerProductDisplay</servlet-name>
+     	<servlet-class>servlet.CustomerProductDisplay</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>CustomerProductDisplay</servlet-name>
+     	<url-pattern>/CustomerProductDisplay</url-pattern>
+     </servlet-mapping>
+     
+     <servlet>
+     	<servlet-name>ProductUpdate</servlet-name>
+     	<servlet-class>servlet.ProductUpdate</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>ProductUpdate</servlet-name>
+     	<url-pattern>/ProductUpdate</url-pattern>
+     </servlet-mapping>
+     
+     <servlet>
+     	<servlet-name>EditProduct</servlet-name>
+     	<servlet-class>servlet.EditProduct</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>EditProduct</servlet-name>
+     	<url-pattern>/EditProduct</url-pattern>
+     </servlet-mapping>
+     
+      <servlet>
+     	<servlet-name>ProductDelete</servlet-name>
+     	<servlet-class>servlet.ProductDelete</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>ProductDelete</servlet-name>
+     	<url-pattern>/ProductDelete</url-pattern>
+     </servlet-mapping>
+     
+     <!-- Medicine CRUD -->
+     <servlet>
+     	<servlet-name>MedicineInsert</servlet-name>
+     	<servlet-class>servlet.MedicineInsert</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>MedicineInsert</servlet-name>
+     	<url-pattern>/MedicineInsert</url-pattern>
+     </servlet-mapping>
+     
+     <servlet>
+     	<servlet-name>MedicineDisplay</servlet-name>
+     	<servlet-class>servlet.MedicineDisplay</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>MedicineDisplay</servlet-name>
+     	<url-pattern>/MedicineDisplay</url-pattern>
+     </servlet-mapping>
+     
+     <servlet>
+     	<servlet-name>MedicineImageDisplay</servlet-name>
+     	<servlet-class>servlet.MedicineImageDisplay</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>MedicineImageDisplay</servlet-name>
+     	<url-pattern>/MedicineImageDisplay</url-pattern>
+     </servlet-mapping>
+     
+      <servlet>
+     	<servlet-name>CustomerMedicineDisplay</servlet-name>
+     	<servlet-class>servlet.CustomerMedicineDisplay</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>CustomerMedicineDisplay</servlet-name>
+     	<url-pattern>/CustomerMedicineDisplay</url-pattern>
+     </servlet-mapping>
+     
+     <servlet>
+     	<servlet-name>MedicineUpdate</servlet-name>
+     	<servlet-class>servlet.MedicineUpdate</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>MedicineUpdate</servlet-name>
+     	<url-pattern>/MedicineUpdate</url-pattern>
+     </servlet-mapping>
+     
+     <servlet>
+     	<servlet-name>EditMedicine</servlet-name>
+     	<servlet-class>servlet.EditMedicine</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>EditMedicine</servlet-name>
+     	<url-pattern>/EditMedicine</url-pattern>
+     </servlet-mapping>
+	
+	 <!-- Customer CRUD -->
+	 <servlet>
+     	<servlet-name>CustomerSignUp</servlet-name>
+     	<servlet-class>servlet.CustomerSignUp</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>CustomerSignUp</servlet-name>
+     	<url-pattern>/CustomerSignUp</url-pattern>
+     </servlet-mapping>
+     
+     <servlet>
+     	<servlet-name>CustomerLogin</servlet-name>
+     	<servlet-class>servlet.CustomerLogin</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>CustomerLogin</servlet-name>
+     	<url-pattern>/CustomerLogin</url-pattern>
+     </servlet-mapping>
+     
+     <servlet>
+     	<servlet-name>CustomerLogout</servlet-name>
+     	<servlet-class>servlet.CustomerLogout</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>CustomerLogout</servlet-name>
+     	<url-pattern>/CustomerLogout</url-pattern>
+     </servlet-mapping>
+     
+     <servlet>
+     	<servlet-name>CustomerProfile</servlet-name>
+     	<servlet-class>servlet.CustomerProfile</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>CustomerProfile</servlet-name>
+     	<url-pattern>/CustomerProfile</url-pattern>
+     </servlet-mapping>
+     
+     <servlet>
+     	<servlet-name>CustomerList</servlet-name>
+     	<servlet-class>servlet.CustomerList</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>CustomerList</servlet-name>
+     	<url-pattern>/CustomerList</url-pattern>
+     </servlet-mapping>
+     
+     <servlet>
+     	<servlet-name>CustomerEdit</servlet-name>
+     	<servlet-class>servlet.CustomerEdit</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>CustomerEdit</servlet-name>
+     	<url-pattern>/CustomerEdit</url-pattern>
+     </servlet-mapping>
+     
+     <servlet>
+     	<servlet-name>CustomerUpdate</servlet-name>
+     	<servlet-class>servlet.CustomerUpdate</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>CustomerUpdate</servlet-name>
+     	<url-pattern>/CustomerUpdate</url-pattern>
+     </servlet-mapping>
+     
+      <servlet>
+     	<servlet-name>CustomerDelete</servlet-name>
+     	<servlet-class>servlet.CustomerDelete</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>CustomerDelete</servlet-name>
+     	<url-pattern>/CustomerDelete</url-pattern>
+     </servlet-mapping>
+     
+     <servlet>
+     	<servlet-name>AdminCustomerDelete</servlet-name>
+     	<servlet-class>servlet.AdminCustomerDelete</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>AdminCustomerDelete</servlet-name>
+     	<url-pattern>/AdminCustomerDelete</url-pattern>
+     </servlet-mapping>
+     
+     <!-- Prescription Upload CRUD -->
+     <servlet>
+     	<servlet-name>PrescriptionInsert</servlet-name>
+     	<servlet-class>servlet.PrescriptionInsert</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>PrescriptionInsert</servlet-name>
+     	<url-pattern>/PrescriptionInsert</url-pattern>
+     </servlet-mapping>
+     
+     <servlet>
+     	<servlet-name>DisplayCustomerPrescription</servlet-name>
+     	<servlet-class>servlet.DisplayCustomerPrescription</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>DisplayCustomerPrescription</servlet-name>
+     	<url-pattern>/DisplayCustomerPrescription</url-pattern>
+     </servlet-mapping>
+     
+     <servlet>
+     	<servlet-name>StaffPrescriptionDisplay</servlet-name>
+     	<servlet-class>servlet.StaffPrescriptionDisplay</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>StaffPrescriptionDisplay</servlet-name>
+     	<url-pattern>/StaffPrescriptionDisplay</url-pattern>
+     </servlet-mapping>
+     
+      <servlet>
+     	<servlet-name>EditCustomerPrescription</servlet-name>
+     	<servlet-class>servlet.EditCustomerPrescription</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>EditCustomerPrescription</servlet-name>
+     	<url-pattern>/EditCustomerPrescription</url-pattern>
+     </servlet-mapping>
+     
+     <servlet>
+     	<servlet-name>UpdateCustomerPrescription</servlet-name>
+     	<servlet-class>servlet.UpdateCustomerPrescription</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>UpdateCustomerPrescription</servlet-name>
+     	<url-pattern>/UpdateCustomerPrescription</url-pattern>
+     </servlet-mapping>
+     
+      <servlet>
+     	<servlet-name>DeleteCustomerPrescription</servlet-name>
+     	<servlet-class>servlet.DeleteCustomerPrescription</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>DeleteCustomerPrescription</servlet-name>
+     	<url-pattern>/DeleteCustomerPrescription</url-pattern>
+     </servlet-mapping>
+     
+      <servlet>
+     	<servlet-name>DeleteStaffPrescription</servlet-name>
+     	<servlet-class>servlet.DeleteStaffPrescription</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>DeleteStaffPrescription</servlet-name>
+     	<url-pattern>/DeleteStaffPrescription</url-pattern>
+     </servlet-mapping>
+     
+     
+      <!-- Product Add to cart -->
+      <servlet>
+     	<servlet-name>AddToProductCart</servlet-name>
+     	<servlet-class>servlet.AddToProductCart</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>AddToProductCart</servlet-name>
+     	<url-pattern>/AddToProductCart</url-pattern>
+     </servlet-mapping>
+     
+     <servlet>
+     	<servlet-name>ViewProductCart</servlet-name>
+     	<servlet-class>servlet.ViewProductCart</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>ViewProductCart</servlet-name>
+     	<url-pattern>/ViewProductCart</url-pattern>
+     </servlet-mapping>
+     
+      
+     <servlet>
+     	<servlet-name>ClearCart</servlet-name>
+     	<servlet-class>servlet.ClearCart</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>ClearCart</servlet-name>
+     	<url-pattern>/ClearCart</url-pattern>
+     </servlet-mapping>
+     
+     
+     
+     <!-- Staff Login -->
+     <servlet>
+     	<servlet-name>StaffLogin</servlet-name>
+     	<servlet-class>servlet.StaffLogin</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>StaffLogin</servlet-name>
+     	<url-pattern>/StaffLogin</url-pattern>
+     </servlet-mapping>
+     
+      <servlet>
+     	<servlet-name>StaffLogout</servlet-name>
+     	<servlet-class>servlet.StaffLogout</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>StaffLogout</servlet-name>
+     	<url-pattern>/StaffLogout</url-pattern>
+     </servlet-mapping>
+     
+     
+     
+     <!-- Medicine Order CRUD -->
+     <!-- add prescription order -->
+	 <servlet>
+     	<servlet-name>addPrescriptionS</servlet-name>
+     	<servlet-class>servlet.addPrescriptionS</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>addPrescriptionS</servlet-name>
+     	<url-pattern>/addPrescriptionS</url-pattern>
+     </servlet-mapping>
+     
+     <!-- display prescription orders -->
+    	 <servlet>
+     	<servlet-name>displayPrescriptionS</servlet-name>
+     	<servlet-class>servlet.displayPrescriptionS</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>displayPrescriptionS</servlet-name>
+     	<url-pattern>/displayPrescriptionS</url-pattern>
+     </servlet-mapping>
+     
+     <!-- uodate prescription order -->
+     <servlet>
+     	<servlet-name>updatePrescriptionS</servlet-name>
+     	<servlet-class>servlet.updatePrescriptionS</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>updatePrescriptionS</servlet-name>
+     	<url-pattern>/updatePrescriptionS</url-pattern>
+     </servlet-mapping>
+     
+     <!-- delete prescription order -->
+     <servlet>
+     	<servlet-name>deletePrescriptionOrder</servlet-name>
+     	<servlet-class>servlet.deletePrescriptionOrder</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>deletePrescriptionOrder</servlet-name>
+     	<url-pattern>/deletePrescriptionOrder</url-pattern>
+     </servlet-mapping>
+     
+     <!-- prescription cart  -->
+     <servlet>
+        <servlet-name>MedicineCartServlet</servlet-name>
+        <servlet-class>servlet.MedicineCartServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>MedicineCartServlet</servlet-name>
+        <url-pattern>/MedicineCartServlet</url-pattern>
+    </servlet-mapping>
+    
+    <!-- clear medicine cart Servlet -->
+		<servlet>
+    <servlet-name>ClearMedicineCartServlet</servlet-name>
+    <servlet-class>servlet.ClearMedicineCartServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+    	<servlet-name>ClearMedicineCartServlet</servlet-name>
+    	<url-pattern>/ClearMedicineCart</url-pattern>
+	</servlet-mapping>
+    
+     
+     
+      <!-- Order CRUD  -->
+      
+        <servlet>
+        <servlet-name>OrderPage</servlet-name>
+        <servlet-class>servlet.OrderPage</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>OrderPage</servlet-name>
+        <url-pattern>/OrderPage</url-pattern>
+    </servlet-mapping>
+    
+       <servlet>
+        <servlet-name>ViewOrderPage</servlet-name>
+        <servlet-class>servlet.ViewOrderPage</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ViewOrderPage</servlet-name>
+        <url-pattern>/ViewOrderPage</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+        <servlet-name>PlaceOrder</servlet-name>
+        <servlet-class>servlet.PlaceOrder</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>PlaceOrder</servlet-name>
+        <url-pattern>/PlaceOrder</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>AdminViewOrders</servlet-name>
+        <servlet-class>servlet.AdminViewOrders</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>AdminViewOrders</servlet-name>
+        <url-pattern>/AdminViewOrders</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+        <servlet-name>EditOrderServlet</servlet-name>
+        <servlet-class>servlet.EditOrderServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>EditOrderServlet</servlet-name>
+        <url-pattern>/EditOrderServlet</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+        <servlet-name>ViewOrdersServlet</servlet-name>
+        <servlet-class>servlet.ViewOrdersServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ViewOrdersServlet</servlet-name>
+        <url-pattern>/ViewOrdersServlet</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+        <servlet-name>DeleteOrderServlet</servlet-name>
+        <servlet-class>servlet.DeleteOrderServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DeleteOrderServlet</servlet-name>
+        <url-pattern>/DeleteOrderServlet</url-pattern>
+    </servlet-mapping>
+    
+    <!-- Medicine Checkout Servlet -->
+		<servlet>
+		    <servlet-name>MedicineCheckoutServlet</servlet-name>
+		    <servlet-class>servlet.MedicineCheckoutServlet</servlet-class>
+		</servlet>
+		<servlet-mapping>
+		    <servlet-name>MedicineCheckoutServlet</servlet-name>
+		    <url-pattern>/MedicineCheckoutServlet</url-pattern>
+		</servlet-mapping>
+		
+		<!-- Place Medicine Order Servlet -->
+		<servlet>
+		    <servlet-name>PlaceMedicineOrderServlet</servlet-name>
+		    <servlet-class>servlet.PlaceMedicineOrderServlet</servlet-class>
+		</servlet>
+		<servlet-mapping>
+		    <servlet-name>PlaceMedicineOrderServlet</servlet-name>
+		    <url-pattern>/PlaceMedicineOrder</url-pattern>
+		</servlet-mapping>
+    
+    
+</web-app>
